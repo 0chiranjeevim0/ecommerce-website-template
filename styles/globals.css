@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .primary{
+        background-color:#00081f;
+    }
+    .subnavbar-menu{
+        @apply inline-flex items-center text-gray-700;
+    }
+    .subnavbar-menu li:hover{
+        color:#00081f;
+    }
+    .topbar-container-unActive{
+        height:30vh;
+        background-color:#00081f;
+        display:none;
+    }
+    .topbar-container-Active{
+        height:40vh;
+        background-color:#00081f;
+        display:block;
+    }
+    @media(min-width:1080px){
+        #banner-container{
+            height:80vh;
+            width:100%
+        }
+        #banner-container img{
+            height:80vh;
+            width:100%;
+    
+        }
+        #banner-text-container{
+            height:60vh;
+        }
+    }
+    
+}
